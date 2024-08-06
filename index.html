@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="3D Semantic Novelty Detection via Large-Scale Pre-Trained Models">
+  <meta name="keywords" content="3DSend">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>3D Semantic Novelty Detection
+    via Large-Scale Pre-Trained Models</title>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://github.com/paolotron">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://github.com/antoalli/3D_OS">
+            3DOS
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">3D Semantic Novelty Detection
+            via Large-Scale Pre-Trained Models</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://www.polito.it/personale?p=paolo.rabino">Paolo Rabino</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://www.polito.it/personale?p=antonio.alliegro">Antonio Alliegro</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://www.polito.it/personale?p=tatiana.tommasi">Tatiana Tommasi</a><sup>1</sup>,
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Politecnico di Torino <br> &lt;name&gt;.&lt;surname&gt;@polito.it</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/paolotron/3DSend"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+              <span class="link-block">
+                <a href="https://github.com/antoalli/3D_OS"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data</span>
+                  </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Shifting deep learning models from lab environments to real-world settings entails preparing
+            them to handle unforeseen conditions, including the chance of encountering novel objects from classes that
+            were not included in their training data. Such occurrences can pose serious threats in various applications. The
+            task of Semantic Novelty detection has attracted significant attention in the last years mainly on 2D images,
+            overlooking the complex 3D nature of the real-world.
+          </p>
+          <p>
+            In this study, we address this gap by examining the
+            geometric structures of objects within 3D point clouds to effectively detect semantic novelty.
+            We advance the field by introducing 3D-SeND, a method that harnesses a large-scale pre-trained model
+            to extract patch-based object representations directly from its intermediate feature representation. These
+            patches are used to precisely characterize each known class. At inference, a normality score is obtained by
+            assessing whether a test sample can be reconstructed predominantly from patches of a single known class or
+            from multiple classes. We evaluate 3D-SeND on real-world point cloud samples when the reference known
+            data are synthetic and demonstrate that it excels in both standard and few-shot scenarios. Thanks to its patch-
+            based object representation, it is possible to visualize 3D-SeND’s predictions with a valuable explanation
+            of the decision process. Moreover, the inherent training-free nature of 3D-SeND allows for its immediate
+            application to a wide array of real-world tasks, offering a compelling advantage over approaches that require
+            a task-specific learning phase.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Method</h2>
+        <div class="content has-text-justified">
+      <img src="static/images/model.png" alt="Main Method Summary">
+      <p>
+      Our method is divided in three phases:
+      <ol>
+        <li> First we obtain a deep learning model for feature extraction, we have no requirement for training objective or output type as our method is both objective and output agnostic, only that the model has a good internal representation of generic 3D point clouds</li>
+        <li> Then we cut off the last layers of the model and extract all the reference patches from the support set data. This step generates a <i>patchyfied</i> representation of our cad reference models that we store in our unified memory bank. Optionally if the memory bank becomes too large we can down-sample it using coreset subsampling</li>
+        <li> Finally we can feed our method a test sample, we <i>patchfy</i> again using our feature extractor and compare it with our memory bank, if the extracted features match closely features belonging all from the same class of objects then the object will be classified as ID (In Distribution) otherwise if patches belong to different classes or are far away in feature space they will be classified as OOD (Out of Distribution).
+        Check out the qualitative results for a visual intuition of our scoring function</li>
+      </ol>
+      </p>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <div class="content has-text-justified">
+            <img src="static/images/qualitative.jpg" alt="qualitative results">
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{park2021nerfies,
+  author    = {Paolo Rabino, Antonio Alliegro, Tatiana Tommasi},
+  title     = {3D Semantic Novelty Detection via Large-Scale Pre-Trained Models},
+  year      = {2024},
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="./static/videos/nerfies_paper.pdf">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            This means you are free to borrow the <a
+              href="https://nerfies.github.io/">source code</a> of this website,
+            we just ask that you link back to this page in the footer.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
