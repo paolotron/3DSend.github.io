@@ -1,6 +1,6 @@
 # 3D-Send
 
-This is the repository that contains source code for the [3DSend website]([https://3DSend.github.io](https://paolotron.github.io/3DSend.github.io/)).
+This is the repository that contains source code for the [3DSend website](https://paolotron.github.io/3DSend.github.io/).
 
 
 # Website License
